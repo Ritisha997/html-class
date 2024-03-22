@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .nav-menu{
+            list-style: none;
+            background-color: rgb(186, 189, 189);
+            width: 600px;
+        }
+        .nav-menu li{
+            padding: 10px;
+            border-bottom: 1px solid black;
+        } 
+        .nav-menu li:first-child{
+            /* border: none; */
+        }
+        .nav-menu li:last-child{
+            color: red;
+            border: none;
+        }
+        .nav-menu li:nth-child(2){
+            color: blueviolet;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+        .navbar li{
+            float: left;
+        }
+        .navbar{
+            background-color: rgb(5, 212, 143);
+            list-style: none;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ul class="nav-menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact us</li>
+    </ul>
+</body>
+</html>
