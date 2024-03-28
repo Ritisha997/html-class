@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>visibility</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* h1{ */
+            /* display: none; */
+            /* visibility: hidden; */
+            /* margin-top: -30px;
+        } */
+        /* h2{
+            color: blue !important;
+            margin-top: -20px;
+            
+        }
+        .heading{
+            color: brown;
+        } */
+      .item{
+        background-color: aquamarine;
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
+        text-align: center;
+        flex: 1;
+      }
+      .flex-container{
+        display: flex;
+        background-color: rgb(198, 197, 196);
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+       align-items: center; 
+        height: 50vh;
+       /* justify-content: space-evenly; */
+      }
+      /* .item-1{
+        flex-shrink: 0;
+      }
+      .item-2{
+        flex-grow: 1;
+      }
+      .item-3{
+        flex-grow: 2;
+      } */
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <div class="flex-container">
+        <div class="item item-1">
+            <h3>Item1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item3</h3>
+        </div>
+    </div>
+    <!-- <div>
+      <h1>my title</h1>
+      <h2 class="heading">my title</h2>
+      <h2 class="heading">my title</h2>
+      <h3 class="heading">my title</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+        quae et veritatis earum ab esse soluta quos enim, quam quod consectetur
+        nemo nostrum hic est corrupti dignissimos. At, adipisci labore!
+      </p>
+    </div> -->
+  </body>
+</html>
