@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em and rem</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 16px;
+        }
+    .container{
+        font-size: 20px;
+        background-color: blueviolet;
+        height: 100vh;
+        width: 50vw;
+    }
+    @media(min-width: 500px){
+        html{
+            font-size: 20px;
+        }
+    }
+
+    /* while using em it inhert the parent element, rem inhert the root element
+     while converting px to em(px*em, px*rem) : 2*20= 40px */
+    .container p{
+        font-size: 2rem;
+        width: 20%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is heading</h1>
+        <p>this is paragraph</p>
+    </div>
+</body>
+</html>
