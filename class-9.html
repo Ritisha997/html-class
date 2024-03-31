@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icons and overlay</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome- 
+    free@5.15.4/css/fontawesome.min.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            
+        }
+        .header{
+            background-image: url('https://images.pexels.com/photos/2379653/pexels-photo-2379653.jpeg?auto=compress&cs=tinysrgb&w=600');
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           padding: 0 40px;
+           height: 100vh;
+           position: relative;
+        }
+        .header::before{
+            content: '';
+            background-color: rgba(216, 216, 216, 0.615);
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            
+        }
+        .sub-container2{
+            display: flex;
+            width: 40vw;
+            z-index: 10;
+            /* background-color: red; */
+            justify-content: space-between;
+        }
+        .sub-container1{
+            z-index: 10;
+        }
+        .flex-list{
+            display: flex;
+            list-style: none;
+           width: 60%;
+           justify-content: space-between;
+           /* background-color: black; */
+            
+        }
+        .center{
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90%;
+        }
+        .center h1{
+            z-index: 12;
+        }
+        li a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <h1>this is my icon</h1>
+        <i class="fas fa-book-open"></i>
+        <i class="fas fa-circle"></i>
+    </div> -->
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="sub-container1">
+                    <h1>This is my website</h1>
+                    <p>This is my logo</p>
+                </div>
+                <div class="sub-container2">
+                    <ul class="flex-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                    <button>Login</button>
+                </div>
+            
+            </div>
+            <div class="center">
+                <h1>Hero Section</h1>
+            </div>
+        </div>
+    </header>
+    <div>
+        <h1>hello</h1>
+    </div>
+</body>
+</html>
